@@ -1,0 +1,30 @@
+name: Workflow By Using Variables
+run-name: Created By ${{ github.actor }}
+on: 
+  push:
+    branches:
+      - main
+      - features/*
+      - dev
+      - qa
+  pull_request:
+    branches:
+      - main 
+      - features/*
+      - dev
+      - qa
+  workflow_dispatch:
+env: 
+  Cloud: Azure_Cloud
+job:
+  Gretting_Job:
+    runs-on: ubuntu-latest
+    env:
+      Greeting: Hello 
+    steps:
+      - name: Print a Greeting
+        run: echo $Greeting $First_Name is using $Cloud
+        env: 
+          First_Name: Sunil
+          
+  
