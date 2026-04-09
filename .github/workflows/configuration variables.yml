@@ -12,7 +12,7 @@ jobs:
       Greeting: Hello
     steps:
     - name: My First Step
-      run: echo "$Greeting $User is using $Cloud to build ${{ vars.Project_Id }}
+      run: echo "$Greeting $User is using $Cloud to build ${{ vars.Project_Id }}"
       env: 
         User: Sunil
     
