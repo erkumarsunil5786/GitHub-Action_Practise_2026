@@ -1,4 +1,4 @@
-name: Created by ${{ github.actor}}
+name: Created by ${{ github.actor }}
 on:
   workflow_dispatch:
 env:
