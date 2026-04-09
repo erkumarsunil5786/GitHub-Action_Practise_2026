@@ -1,5 +1,5 @@
 name: Workflow Using Configuration Variables||| Github
-run-name: Created by ${{ gitbub.actor}}
+run-name: Created by ${{ github.actor}}
 on:
   workflow_dispatch:
 env:
