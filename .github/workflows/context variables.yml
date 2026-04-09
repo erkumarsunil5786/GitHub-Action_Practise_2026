@@ -17,8 +17,9 @@ jobs:
          echo "repository owner is ${{ github.repository_owner }}"
          echo "workflow run number is ${{ github.run_number }}"
          echo "workflow run id is ${{ github.run_id }}"
-       env:
-         User: Sunil
+  
      - name: Print Final Message 
        run: echo "$User is using $Cloud to build ${{ vars.PROJECT_ID }}"
+       env:
+         User: Sunil
      
