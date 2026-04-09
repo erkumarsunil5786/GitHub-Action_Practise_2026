@@ -16,7 +16,7 @@ on:
   workflow_dispatch:
 env: 
   Cloud: Azure_Cloud
-job:
+jobs:
   Gretting_Job:
     runs-on: ubuntu-latest
     env:
