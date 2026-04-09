@@ -1,4 +1,5 @@
-name: Created by ${{ github.actor }}
+name: Context Variable workflow
+run-name: Created by ${{ github.actor }}
 on:
   workflow_dispatch:
 env:
