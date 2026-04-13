@@ -19,4 +19,11 @@ jobs:
     steps:
       - name: Print Message
         run: echo "Hello India! Good Afternoon" 
+      - name: run Multiline Script
+        run: | 
+          echo "Hello India"
+          echo "Good Morning"
+          echo "Running Multiple Line Script"
+          date
+          pwd
     
