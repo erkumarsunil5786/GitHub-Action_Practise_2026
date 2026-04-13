@@ -1,1 +1,22 @@
-
+name: First Workflow
+on:
+  push:
+    branches:
+      - main
+      - dev
+      - features/*
+  pull_request:
+    branches:
+      - main
+      - dev
+      - feature/*
+  workflow_dispatch:
+jobs:
+  build:
+    name: First Build Job 
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Print Message
+        run: echo "Hello India! Good Afternoon" 
+    
