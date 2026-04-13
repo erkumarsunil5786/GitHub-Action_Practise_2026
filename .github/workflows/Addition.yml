@@ -5,12 +5,12 @@ on:
       number1: 
         description: 'Please Enter First Number'
         default: '0'
-        required: 'true'
+        required: true
 
        number2: 
         description: 'Please Enter Second Number'
         default: '0'
-        required: 'true'
+        required: true
 jobs:
   Additing_Number:
     - name: Addition Of Two Numbers
