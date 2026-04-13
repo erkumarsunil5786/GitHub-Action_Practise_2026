@@ -2,7 +2,7 @@ name: Workflow With Variable
 on: 
   workflow_dispatch
 env: 
-  cloud: Azure-Cloud
+  Cloud: Azure-Cloud
 jobs:
   Build:
     name: First Build Job
@@ -10,7 +10,7 @@ jobs:
       Greeting: Hello
     runs-on: ubuntu-latest
     steps:
-      - name: Hello Action Today is Monday
-        run: echo "$Greeting $User is using $cloud"
+      - name: Hello $User, Today is Monday
+        run: echo "$Greeting $User is using $Cloud"
         env:
-          User: 'Devops Engineer'
+          User: 'Sunil'
