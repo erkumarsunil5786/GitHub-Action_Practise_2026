@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - name: "Hello User Good Afternoon"
-        run: echo "$Greeting $User is using $Cloud for ${{ vars.project.id1 }} Automation"  # using configuration variable by ${{ vars.enc }}
+        run: echo "$Greeting $User is using $Cloud for ${{ vars.PROJECT_ID1 }} Automation"  # using configuration variable by ${{ vars.enc }}
         env:
           User: Sunil
   
