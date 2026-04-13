@@ -1,6 +1,6 @@
 name: Workflow With Variable
 on: 
-  workflow_dispatch:
+  workflow_dispatch
 env: 
   cloud: Azure-Cloud
 jobs:
