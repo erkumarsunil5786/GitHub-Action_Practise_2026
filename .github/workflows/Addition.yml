@@ -7,20 +7,21 @@ on:
         default: '0'
         required: true
 
-       number2: 
-        description: 'Please Enter Second Number'
-        default: '0'
-        required: true
+      number2: 
+       description: 'Please Enter Second Number'
+       default: '0'
+       required: true
 jobs:
   Additing_Number:
-    - name: Addition Of Two Numbers
-      runs-on: ubuntu-latest
-      steps:
-        - name: Adding Numbers
-          run: |
-            echo "First Number: ${{ github.event.inputs.number1 }}"
-            echo "Second Number: ${{ github.event.inputs.number2 }}"
-            sum=$((${{ github.event.inputs.number1 }} + ${{ github.event.inputs.number2 }}))
-            echo "Sum is: $sum"
-      
-      
+    name: Addition Of Two Numbers
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Adding Numbers
+        run: |
+          echo "First Number: ${{ github.event.inputs.number1 }}"
+          echo "Second Number: ${{ github.event.inputs.number2 }}"
+          
+          sum=$((${{ github.event.inputs.number1 }} + ${{ github.event.inputs.number2 }}))
+          
+          echo "Sum is: $sum"
