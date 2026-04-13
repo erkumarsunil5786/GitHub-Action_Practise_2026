@@ -1,0 +1,21 @@
+name: Workflow For System Define| Context Variable
+on:
+  workflow_dispatch
+env:
+  Cloud: Azure_Cloud
+jobs:
+  Build:
+    name: First Build Job Using System Define Variable
+    runs-on: ubuntu-latest
+    steps:
+      - name: Task By Using System Define Variable
+        run: | 
+          echo "Repository Name is ${{ github.repository }}"
+          echo "Workflow Name is ${{ github.workflow }}"
+          echo "Triggered By ${{ github.actor }}"
+          echo "Event Trigger By ${{ github.event_name }}"
+          echo "Job Name is ${{ github.job }}"
+          echo "Runner Id Name is ${{ github.run_id }}"
+          echo "Runner OS Name is ${{ github.os }}"
+          
+          
