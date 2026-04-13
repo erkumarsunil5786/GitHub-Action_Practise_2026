@@ -16,6 +16,8 @@ jobs:
           echo "Event Trigger By ${{ github.event_name }}"
           echo "Job Name is ${{ github.job }}"
           echo "Runner Id Name is ${{ github.run_id }}"
-          echo "Runner OS Name is ${{ github.os }}"
+          echo "Runner OS Name is ${{ runner.os }}"
+          echo "Runner Name is ${{ runner.name }}"
+          
           
           
