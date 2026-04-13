@@ -10,7 +10,7 @@ jobs:
       Greeting: Hello
     runs-on: ubuntu-latest
     steps:
-      - name: Hello $User, Today is Monday
+      - name: Hello Sunil, Today is Monday
         run: echo "$Greeting $User is using $Cloud"
         env:
           User: 'Sunil'
