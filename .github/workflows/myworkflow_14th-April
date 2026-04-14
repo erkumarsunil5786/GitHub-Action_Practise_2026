@@ -1,0 +1,30 @@
+name: Multiplication Of Two Numbers
+run-name: Deploy by ${{ github.actor }}
+on: 
+  workflow_dispatch:
+    inputs:
+      number1:
+        description: Please Enter First Number
+        required: true
+        default: 1
+        type: choice
+      
+      number2:
+        description: Please Enter Second Number
+        required: true
+        default: 1
+        type: choice
+
+jobs:
+  Multiplication_Numbers:
+    name: Multiplication Of Two Numbers
+    runs-on: ubuntu-latest
+    steps:
+      - name: Multiplying Numbers
+        run: |
+          echo "First Number : ${{ github.event.inputs.number1 }}"
+          echo "Second Number : ${{ github.event.inputs.number2 }}"
+          product=$((${{ github.evnet.inputs.number1 }} * ${{ github.event.inputs.number2 }}))
+          echo "Multiplication result is $product"
+          
+  
